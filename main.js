@@ -151,4 +151,10 @@ deposit.amount=amount1
 
   //===========> Extra  Practice <================
 
+  //1-Write a function minMax that accepts a number argument number and returns a string representing the maximum and the minimum numbers. Read the comments for more information.
+  const minMax = function (number) {
+    //if (number === Number.POSITIVE_INFINITY) {
+
+   // }
+  };// I dont understand
   
