@@ -25,6 +25,9 @@ const favoriteFood = function () {
       return ++counter;
     };
   };
+  const count1=createCounter();
+  const count2=createCounter();
+
 
  //===========> Practice <================
 
@@ -95,4 +98,25 @@ const countDown = function () {
   };
   
   //6- Write a function addToList that accepts a string argument toDo and returns the current list as a string. Every time we invoke the function it should return the old toDo item plus the new one.
-  
+  let oldToDo
+  const addToList = function (toDo) {
+   if(oldToDo==undefined){
+       oldToDo=toDo
+       return toDo
+   }else return oldToDo +" "+toDo
+  }; // I cannt save all value of oldTodo
+
+  //7- Write a function createToDoList that works similarly to addToList function but instead of a global variable use a closure variable.
+  const createToDoList = function () {
+    let oldToDo
+    return function (toDo) {
+     if(oldToDo==undefined){
+         oldToDo=toDo
+         return toDo
+     }else return oldToDo +" "+toDo
+    };
+  };
+
+const toDoListOne=createToDoList()
+
+//8- 
