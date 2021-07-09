@@ -119,4 +119,36 @@ const countDown = function () {
 
 const toDoListOne=createToDoList()
 
-//8- 
+//8- Write a function deposit that accepts a number argument amount and returns the current account balance after depositing the amount.
+
+const deposit = function (amount) {
+    let amount1
+deposit.amount=amount1
+     amount1= amount
+    return amount 
+  }; //how I can save the change on varable
+  
+  //9- Write a function withdraw that accepts a number argument amount and returns the current account balance after withdrawing the amount.
+  const withdraw = function (amount) {
+    // TODO: Your code here
+  }; //same problem above
+
+  //10- Write a closure function createAccount that accepts a number argument initialValue that represents the starting value of the account balance and return a closure function with two parameters, transactionType and amount that deposit or withdraw from the account balance depending on the transactionTypeand returns the total balance amount. Make sure to prevent transactions that withdraw more than the total balance.
+  const createAccount = function (initialValue) {
+    const deposit = function (amount) {
+        let amount1
+    deposit.amount=amount1
+         amount1= amount
+        return amount 
+      };
+
+    const withdraw = function (amount) {
+        // TODO: Your code here
+      };
+  };
+  
+  const accountOne = createAccount(0);
+
+  //===========> Extra  Practice <================
+
+  
